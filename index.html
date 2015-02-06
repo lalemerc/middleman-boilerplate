@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!--     mobile adaption of the screen width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- opengraph - logo on fb -->
+    <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Pap.r</title>
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="index">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+<a class="navbar-brand" href="./">          <img src="images/logo.svg" />
+</a>        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+<a href="/pricing.html">              <i class="fa fa-dollar"></i> Pricing
+</a>            </li>
+            <li>
+<a href="contact.html">              <i class="fa fa-envelope-o"></i> Contact
+</a>            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Follow-us <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://www.facebook.com/lewagonformation"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/lewagonparis"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+              </ul>
+            </li>
+            <li><a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn">Order now</a></li>
+          </ul>
+          </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+          <!-- content index.html-->
+  <div id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="logo-intro">
+            <!-- Banner -->
+            <p>Turn your Pap.r into your best friend</p>
+            <p>Super save data storage</p>
+            <a class="btn btn-sample" href="">Get it</a>
+          </div>
+        </div>
+        <div class="col-xs-6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="blue-bg padded">
+    <div class="container text-center">
+      <!-- Features -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <!-- <img src="images/papr-2.svg" class='pr-logo'> -->
+            <img class="pr-logo" src="images/papr-2.svg" />
+            <h2>Papr</h2>
+            <p>It is foldable, ecological and economical.</p>
+            <p>Recycles with ease, and serves tons of purposes!
+            With the optional 'Penc.l' you can use it to easily write lists, messages, ...</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img class="pr-logo" src="images/safe.svg" />
+            <h2>Safe</h2>
+            <p>It is safe, the data written on Pap.r stays there ... forever!</p> <p> No erasing, no electrostatic risks! (keep away from fire)</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img class="pr-logo" src="images/readable.svg" />
+            <h2>readable</h2>
+            <p>It's easily viewable during the day, and at night:</p>
+            <p>use the optional 'Penc.l FLUO' to make easily readable 'night-time notes'</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img class="pr-logo" src="images/fun.svg" />
+            <h2>Fun</h2>
+            <p>It's fun! It can be folded into ... whatever your imagination allows!</p>
+            <p>For more information, please visit <a href="www.origami.jp">origami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-white">
+    <div class="container form-style">
+      <!-- Here goes the form -->
+      <H2>Do you want it?</H2>
+      <p>leave us your e-mail</p>
+      <form action='/'>
+        <input type ='email' class'form-control' placeholer='example@mail.com'>
+        <input type ='submit'value='yes' class='btn btn-primary'>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+var myOptions = {
+zoom: 16,
+center: myLatlng,
+scrollwheel: false,
+mapTypeId: google.maps.MapTypeId.ROADMAP,
+styles: [{"featureType":"landscape","stylers":[{"hue":"#F1FF00"},{"saturation":-27.4},{"lightness":9.4},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#0099FF"},{"saturation":-20},{"lightness":36.4},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#00FF4F"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FFB300"},{"saturation":-38},{"lightness":11.2},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00B6FF"},{"saturation":4.2},{"lightness":-63.4},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#9FFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+position: myLatlng,
+map: map,
+title: "You are here!"
+});
+</script>
+</div>
+<!-- Footer -->
+<div id="footer">
+<div class="container">
+<div class="row">
+  <div class="col-xs-4">
+    <ul class="list-inline">
+      <li>
+<a class="list-inline" href="">          <i class="fa fa-youtube"></i>
+</a>      </li>
+
+      <li>
+<a class="list-inline" href="">        <i class="fa fa-instagram"></i>
+</a>      </li>
+
+      <li>
+<a class="list-inline" href="">        <i class="fa fa-facebook-official"></i>
+</a>      </li>
+
+      <li>
+<a class="list-inline" href="">        <i class="fa fa-twitter"></i>
+</a>      </li>
+
+    </ul>
+  </div>
+  <div class="col-xs-8 text-right"><p>Made By Renaat & Laure at Le Wagon</p>
+  </div>
+</div>
+</div>
+</div>
+      </body>
+    </html>
