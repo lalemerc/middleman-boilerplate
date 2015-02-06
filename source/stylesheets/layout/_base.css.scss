@@ -4,3 +4,77 @@
  * Before writing in this file, look if there is not
  * already a Bootstrap SCSS variable that does the same job
  * ------------------------------------- */
+
+// style css
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pr-logo {
+  width: 100px;
+}
+
+.blue-bg{
+  background-color: #3680AD;
+  color: white;
+  padding: 6em;
+}
+
+#logo-intro{
+  margin-top: 5em;
+}
+
+.form-style{
+  background-color: white;
+  color: #282828;
+  padding: 3em;
+}
+
+.form-style h2{
+  font-size: 50px
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.btn-sample{
+  color: #ffffff;
+  background-color: #3680AD;
+  border-color: #3680AD;
+  width: 150px;
+}
+
+.card h2{
+  font-size:18px
+}
+.card p{
+  font-size: 15px;
+}
+
+.title{
+  margin-top: 4em;
+}
+
+// banner css
+
+#banner {
+  background-image: url(../images/bg-pic-1920.png);
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  color: #282828;
+}
+
+h1{
+  font-size: 25px;
+}
+p{
+  font-size: 18px;
+}
+

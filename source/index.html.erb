@@ -1,10 +1,130 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Pap.r
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <!-- content index.html-->
+  <div id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <div id="logo-intro">
+            <!-- Banner -->
+            <p>Turn your Pap.r into your best friend</p>
+            <p>Super save data storage</p>
+            <a class="btn btn-sample" href="">Get it</a>
+          </div>
+        </div>
+        <div class="col-xs-6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="blue-bg padded">
+    <div class="container text-center">
+      <!-- Features -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <!-- <img src="images/papr-2.svg" class='pr-logo'> -->
+            <%= image_tag "papr-2.svg", class:'pr-logo' %>
+            <h2>Papr</h2>
+            <p>It is foldable, ecological and economical.</p>
+            <p>Recycles with ease, and serves tons of purposes!
+            With the optional 'Penc.l' you can use it to easily write lists, messages, ...</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "safe.svg", class:'pr-logo' %>
+            <h2>Safe</h2>
+            <p>It is safe, the data written on Pap.r stays there ... forever!</p> <p> No erasing, no electrostatic risks! (keep away from fire)</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "readable.svg", class:'pr-logo' %>
+            <h2>readable</h2>
+            <p>It's easily viewable during the day, and at night:</p>
+            <p>use the optional 'Penc.l FLUO' to make easily readable 'night-time notes'</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <%= image_tag "fun.svg", class:'pr-logo' %>
+            <h2>Fun</h2>
+            <p>It's fun! It can be folded into ... whatever your imagination allows!</p>
+            <p>For more information, please visit <%= link_to "origami", "www.origami.jp"%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-white">
+    <div class="container form-style">
+      <!-- Here goes the form -->
+      <H2>Do you want it?</H2>
+      <p>leave us your e-mail</p>
+      <form action='/'>
+        <input type ='email' class'form-control' placeholer='example@mail.com'>
+        <input type ='submit'value='yes' class='btn btn-primary'>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+var myOptions = {
+zoom: 16,
+center: myLatlng,
+scrollwheel: false,
+mapTypeId: google.maps.MapTypeId.ROADMAP,
+styles: [{"featureType":"landscape","stylers":[{"hue":"#F1FF00"},{"saturation":-27.4},{"lightness":9.4},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#0099FF"},{"saturation":-20},{"lightness":36.4},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#00FF4F"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FFB300"},{"saturation":-38},{"lightness":11.2},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00B6FF"},{"saturation":4.2},{"lightness":-63.4},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#9FFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+position: myLatlng,
+map: map,
+title: "You are here!"
+});
+</script>
+</div>
+<!-- Footer -->
+<div id="footer">
+<div class="container">
+<div class="row">
+  <div class="col-xs-4">
+    <ul class="list-inline">
+      <li>
+        <% link_to "", class: "list-inline" do %>
+          <i class="fa fa-youtube"></i>
+        <% end %>
+      </li>
+
+      <li>
+        <% link_to "", class: "list-inline" do %>
+        <i class="fa fa-instagram"></i>
+        <% end %>
+      </li>
+
+      <li>
+        <% link_to "", class: "list-inline" do %>
+        <i class="fa fa-facebook-official"></i>
+        <% end %>
+      </li>
+
+      <li>
+        <% link_to "", class: "list-inline" do %>
+        <i class="fa fa-twitter"></i>
+        <% end %>
+      </li>
+
+    </ul>
+  </div>
+  <div class="col-xs-8 text-right"><p>Made By Renaat & Laure at Le Wagon</p>
+  </div>
+</div>
+</div>
+</div>
