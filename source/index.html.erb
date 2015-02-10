@@ -3,8 +3,8 @@ title: Pap.r
 ---
 
   <!-- content index.html-->
-  <div id="banner">
-    <div class="container">
+  <div id="banner" class="smooth-scrollable window-height" style="height: 643px;">
+    <div class="container fade-and-slide">
       <div class="row">
         <div class="col-xs-6">
           <div id="logo-intro">
@@ -17,8 +17,9 @@ title: Pap.r
         <div class="col-xs-6"></div>
       </div>
     </div>
+      <a href="#description" class="scroll-btn"><i class="fa fa-angle-down fa-6 pulse"></i></a>
   </div>
-  <div class="blue-bg padded">
+  <div class="blue-bg padded window-height" id="description">
     <div class="container text-center">
       <!-- Features -->
       <div class="row">
@@ -57,8 +58,9 @@ title: Pap.r
         </div>
       </div>
     </div>
+    <a href="#form" class="scroll-btn"><i class="fa fa-angle-down fa-6 pulse"></i></a>
   </div>
-  <div class="text-center bg-white">
+  <div class="text-center bg-white window-height" id="form">
     <div class="container form-style">
       <!-- Here goes the form -->
       <H2>Do you want it?</H2>
@@ -68,11 +70,12 @@ title: Pap.r
         <input type ='submit'value='yes' class='btn btn-primary'>
       </form>
     </div>
+    <a href="#map" class="scroll-btn"><i class="fa fa-angle-down fa-6 pulse"></i></a>
   </div>
 </div>
 </div>
 <!-- Map -->
-<div id="map" style="width: 100%; height: 400px;"></div>
+<div class="window-height" id="map" style="width: 100%; height: 400px;"></div>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript">
 var myLatlng = new google.maps.LatLng(50.841525, 4.390311);
